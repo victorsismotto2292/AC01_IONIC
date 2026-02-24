@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title color="primary">
+      Exercício 2 - AC01
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    <ion-input label="Digite o valor do lado a" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="a"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input label="Digite o valor do lado b" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="b"></ion-input>
+  </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-item>
+    <ion-input label="Digite o valor do lado c" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="c"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button color="warning" (click)="figura()">Verificar figura geométrica</ion-button>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-label style="color: black;"><strong>{{resultado}}</strong></ion-label>
+  </ion-item-divider>
 </ion-content>
