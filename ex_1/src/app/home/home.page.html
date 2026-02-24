@@ -1,20 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title color="primary">
+      Exercício 1 - Ionic
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-input label="Digite o valor da temperatura" labelPlacement="floating" placeholder="apenas números"></ion-input>
+    <ion-select label="Unidade" label-placement="fixed" placeholder="">
+      <ion-select-option value="celsius">Celsius</ion-select-option>
+      <ion-select-option value="fahrenheit">Fahrenheit</ion-select-option>
+    </ion-select>
+    <ion-button color="warning">Calcular</ion-button>
 </ion-content>
