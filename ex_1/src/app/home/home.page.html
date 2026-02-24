@@ -1,16 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title color="primary">
-      Exercício 1 - Ionic
+      Exercício 1 - AC01
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-input label="Digite o valor da temperatura" labelPlacement="floating" placeholder="apenas números"></ion-input>
-    <ion-select label="Unidade" label-placement="fixed" placeholder="">
-      <ion-select-option value="celsius">Celsius</ion-select-option>
-      <ion-select-option value="fahrenheit">Fahrenheit</ion-select-option>
+  <ion-input label="Digite o valor da temperatura" labelPlacement="floating" placeholder="apenas números" [(ngModel)]="temperatura"></ion-input>
+    <ion-select label="Unidade" label-placement="fixed" [(ngModel)]="escolha">
+      <ion-select-option value="celsius">Celsius -> Fahrenheit</ion-select-option>
+      <ion-select-option value="fahrenheit">Fahrenheit -> Celsius</ion-select-option>
     </ion-select>
-    <ion-button color="warning">Calcular</ion-button>
+    <ion-button color="warning" (click)="temp()">Calcular</ion-button>
+
+    <ion-item-divider>
+          <ion-label style="color: black;"><strong>{{resultado}}</strong></ion-label>
+    </ion-item-divider>
 </ion-content>
