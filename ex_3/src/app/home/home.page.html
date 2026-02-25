@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">
+      Exercício 3 - AC01
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Digite a primeira nota" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="nota1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Digite a segunda nota" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="nota2"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Digite a terceira nota" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="nota3"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Digite a quarta nota" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="nota4"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button color="warning" (click)="media()">Calcular Média</ion-button>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-label style="color: black;"><strong>{{resultado}}</strong></ion-label>
+  </ion-item-divider>
+</ion-content>
