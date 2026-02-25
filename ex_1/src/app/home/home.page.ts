@@ -17,7 +17,7 @@ export class HomePage {
     const valor = parseFloat(this.temperatura);
 
     if(isNaN(valor)){
-      this.resultado = 'Por favor, digite um número válido.';
+      this.resultado = 'Por favor, digite um número.';
       return;
     }
     else if(this.escolha === 'celsius'){
